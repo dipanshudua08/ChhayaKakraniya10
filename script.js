@@ -12,7 +12,7 @@ document.documentElement.classList.add('js');
 /* ------------------------------------------------------------------ CONFIG */
 const CONFIG = {
   whatsapp: '917618283669',        // country code + number, bina + aur space ke (India: 91XXXXXXXXXX)
-  phoneDisplay: '+91 76182 83669', // jo contact section me dikhana hai
+  phoneDisplay: '+91**********', // jo contact section me dikhana hai
   email: 'chhayakakraniya@gmail.com'
 };
 
