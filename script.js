@@ -14,11 +14,7 @@ const CONFIG = {
 };
 
 /* ------------------------------------------------------------------ GALLERY DATA
-   file     : images/ folder ke andar ki file ka naam
-   cat      : 'mehndi' ya 'art'
-   title    : hover / preview me dikhne wala naam
-   feat     : 1, 2, 3 = Featured section me dikhegi (us order me)
-   shape    : 'arch' = upar se gol (mehrab) shape, tall images ke liye achha lagta hai
+   
 */
 const GALLERY = [
   { file: 'bridel Mhandi.jpg', cat: 'mehndi', title: '',       feat: 1, shape: 'arch' },
