@@ -2,9 +2,7 @@
    Chhaya Mehndi & Arts  |  script.js
    ---------------------------------------------------------------------
    1) Sabse pehle neeche CONFIG me apna WhatsApp number aur email badlo.
-   2) Gallery ke titles badalne ho to GALLERY list me edit karo.
-   3) Images: images/ folder me same filename se replace karo
-      (mehndi-01.jpg ... mehndi-10.jpg, art-01.jpg ... art-10.jpg).
+  
    ===================================================================== */
 
 document.documentElement.classList.add('js');
