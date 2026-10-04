@@ -1,12 +1,6 @@
-/* =====================================================================
-   Chhaya Mehndi & Arts  |  script.js
-   
-  
-   ===================================================================== */
 
 document.documentElement.classList.add('js');
 
-/* ------------------------------------------------------------------ CONFIG */
 const CONFIG = {
   whatsapp: '917618283669',        // country code + number, bina + aur space ke (India: 91XXXXXXXXXX)
   phoneDisplay: '+91**********', // jo contact section me dikhana hai
