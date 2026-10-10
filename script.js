@@ -7,7 +7,7 @@ const CONFIG = {
   email: 'chhayakakraniya@gmail.com'
 };
 
-/* ------------ GALLERY DATA
+/* --- GALLERY DATA
    
 */
 const GALLERY = [
@@ -39,7 +39,7 @@ const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').match
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
 
-/* ------------- icons + contact links */
+/* ------ icons + contact links */
 const ICONS = {
   wa: '<path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.87 9.87 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 1.67c2.2 0 4.26.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.26-8.24zM8.53 7.33c-.16 0-.43.06-.66.31-.22.25-.87.85-.87 2.07 0 1.22.89 2.39 1.01 2.56.12.16 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.46-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.29-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.16.25-.64.81-.78.97-.15.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.42h-.48z"/>',
   mail: '<path d="M3.5 4h17A1.5 1.5 0 0 1 22 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 18.5v-13A1.5 1.5 0 0 1 3.5 4zm.7 2L12 11.6 19.8 6H4.2zM20 8l-7.4 5.3a1 1 0 0 1-1.2 0L4 8v10h16V8z"/>'
@@ -61,7 +61,7 @@ const waText = $('[data-wa-text]');
 if (waText) waText.textContent = 'WhatsApp: ' + CONFIG.phoneDisplay;
 $('#year').textContent = new Date().getFullYear();
 
-/* ------------ nav */
+/* ---- nav */
 const nav = $('#nav');
 const burger = $('#burger');
 const navLinks = $('#navLinks');
@@ -86,7 +86,7 @@ function setMenu(open) {
 burger.addEventListener('click', () => setMenu(burger.getAttribute('aria-expanded') !== 'true'));
 navLinks.addEventListener('click', e => { if (e.target.closest('a')) setMenu(false); });
 
-/* ---------- hero: mandala petals + henna vine */
+/* ---- hero: mandala petals + henna vine */
 const SVGNS = 'http://www.w3.org/2000/svg';
 const svgEl = (name, attrs = {}) => {
   const el = document.createElementNS(SVGNS, name);
@@ -148,7 +148,7 @@ const svgEl = (name, attrs = {}) => {
   }
 })();
 
-/* -------------- gallery */
+/* --- gallery */
 const masonry = $('#masonry');
 const state = { filter: 'all' };
 
@@ -226,7 +226,7 @@ $$('[data-filter-link]').forEach(b => b.addEventListener('click', () => {
   $('#gallery').scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth' });
 }));
 
-/* ------------- featured sections */
+/* -- featured sections */
 function buildFeatured(cat, mountId) {
   const mount = $(mountId);
   if (!mount) return;
@@ -249,7 +249,7 @@ function buildFeatured(cat, mountId) {
 buildFeatured('mehndi', '#featMehndi');
 buildFeatured('art', '#featArt');
 
-/* -------------- lightbox (full-screen preview) */
+/* --- lightbox (full-screen preview) */
 const lb = $('#lightbox');
 const lbImg = $('#lbImg');
 const lbTitle = $('#lbTitle');
@@ -336,7 +336,7 @@ lb.addEventListener('touchend', e => {
   if (Math.abs(dx) > 50) { lbState.i += dx < 0 ? 1 : -1; lbRender(); }
 }, { passive: true });
 
-/* -------- custom request form -> WhatsApp / email */
+/* --- custom request form -> WhatsApp / email */
 (function customForm() {
   const box = $('#customForm');
   if (!box) return;
@@ -364,7 +364,7 @@ lb.addEventListener('touchend', e => {
   });
 })();
 
-/* ------ gentle reveal on scroll */
+/* -- gentle reveal on scroll */
 (function reveal() {
   const els = $$('.reveal');
   if (!('IntersectionObserver' in window) || reduceMotion) { els.forEach(el => el.classList.add('is-in')); return; }
