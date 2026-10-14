@@ -376,7 +376,7 @@ ul, ol { padding: 0; list-style: none; }
   .svc-link { justify-self: start; }
 }
 
-/* ------------ custom */
+/* -- custom */
 .custom {
   background:
     radial-gradient(700px 420px at 90% 0%, rgba(185, 138, 62, .16), transparent 70%),
@@ -412,7 +412,7 @@ ul, ol { padding: 0; list-style: none; }
 .fine { font-size: .88rem; color: var(--muted); margin-top: 1rem; }
 @media (max-width: 860px) { .custom-grid { grid-template-columns: 1fr; } }
 
-/* --------- contact */
+/* ---- contact */
 .contact { background: var(--cream); }
 .contact-card {
   position: relative; text-align: center; color: var(--cream);
